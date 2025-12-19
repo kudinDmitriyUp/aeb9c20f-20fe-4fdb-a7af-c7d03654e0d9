@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -46,7 +46,7 @@ export default function DefenseVenturesPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplit
-          title="Defense-Focused Venture Capital"
+          title="Israel's most active defense tech investors"
           description="Strategic investments in transformative defense technologies. We back founders building the future of national security."
           tag="Defense Sector Focus"
           tagIcon={Shield}
