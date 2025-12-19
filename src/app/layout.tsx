@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Fira_Code } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 
-const firaCode = Fira_Code({
-  variable: "--font-fira-code",
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +51,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
         <body
-          className={firaCode.variable}
+          className={interTight.variable}
         >
           <Tag />
           {children}
